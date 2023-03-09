@@ -1,15 +1,13 @@
 ﻿permissions:
   entity:
     overrides:
-      # UCP-594 test_goofy collection is intended only for test purposes
-      - type: "test_goofy"
-        id: "FSU001t3B"
-        description: "enable test_goofy for everyone; Config in new Repo"
+      - type: "goofy"
+        id: "goofy"
+        description: "enable test goofy for everyone; Config in new Repo"
         actions:
           - "create"
           - "read"
           - "update"
           - "delete"
         roles:
-          - "cppt-all"
-          - "dtci-cppt-ingestion-admin"
+          - "role_new"
