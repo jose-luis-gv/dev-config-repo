@@ -1,0 +1,15 @@
+﻿permissions:
+  entity:
+    permissions:
+      # UCP-594 test_mickey collection is intended only for test purposes
+      - type: "test_mickey"
+        id: "FSU001tB"
+        description: "enable test_mickey for everyone; Config in new Repo"
+        actions:
+          - "create"
+          - "read"
+          - "update"
+          - "delete"
+        roles:
+          - "cppt-all"
+          - "dtci-cppt-ingestion-admin"
